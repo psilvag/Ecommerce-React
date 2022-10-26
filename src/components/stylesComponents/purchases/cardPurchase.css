@@ -1,0 +1,83 @@
+/*========VARIABLES========*/
+:root {
+    --primary-color: #f85555;
+    --light-gray: #dcd9d9;
+    --dark-gray: #4f4f4f;
+    --gray: #ababab;
+
+}
+
+/*========ARTICLE========*/
+.article-container {
+    width: 100%;
+    min-height: 340px;
+    border: 1px solid var(--gray);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: Yantramanav, sans-serif;
+    position: relative;
+}
+
+/*========HEADER DATE========*/
+.article-header {
+    color: var(--dark-gray);
+    font-size: 19px;
+    font-weight: bolder;
+    width: 300px;
+    height: 50px;
+    position: absolute;
+    left: 50px;
+    top: 10px;
+
+
+}
+
+/*========ARTICLE ROW BY ROW INFO========*/
+.article-purchase-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*========ARTICLE INFO IN ROW========*/
+.section-purchase-info {
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+    height: 60px;
+    align-items: center;
+
+}
+
+.section-purchase-info h3 {
+    font-size: 15px;
+    color: var(--dark-gray);
+    width: 400px;
+    height: 20px;
+    text-align: left;
+
+
+}
+
+.section-quantity {
+    width: 60px;
+    height: 40px;
+    border: 1px solid var(--gray);
+    border-radius: 4px;
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--dark-gray);
+
+}
+
+.section-price {
+    color: var(--dark-gray);
+    width: 100px;
+    height: 20px;
+    font-size: 17px;
+    font-weight: bold;
+}

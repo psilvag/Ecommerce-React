@@ -1,0 +1,78 @@
+/*========VARIABLES========*/
+:root {
+    --primary-color: #f85555;
+    --light-gray: #dcd9d9;
+    --dark-gray: #4f4f4f;
+    --gray: #ababab;
+    --color-background-login-container: hsla(0, 1%, 72%, .1);
+    --color-background-login: #ffffff;
+}
+
+/*========ARTICLE========*/
+.article-product-card {
+    width: inherit;
+    height: 170px;
+    border-bottom: 1px solid var(--gray);
+
+}
+
+/*========ARTICLE DESCRIPTION========*/
+.article-description {
+    width: inherit;
+    height: 80px;
+    color: var(--gray);
+    font-size: 14px;
+    line-height: 7px;
+}
+
+.article-description span {
+    font-size: 12px;
+    color: black;
+}
+
+/*========ARTICLE QUANTITY AND DELETE BUTTON========*/
+.article-quantity_delete {
+    width: inherit;
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    top: -28px;
+}
+
+.article-quantity {
+    width: 50px;
+    height: 25px;
+    border: 1px solid var(--gray);
+    border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.fa-trash-can {
+    color: var(--primary-color);
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.fa-trash-can:hover {
+    filter: brightness(1.3);
+}
+
+/*========ARTICLE PRICE========*/
+.article-price {
+    width: inherit;
+    height: 20px;
+    position: relative;
+    top: -15px;
+    text-align: right;
+    color: var(--gray);
+}
+
+.article-price span {
+    font-weight: bold;
+    color: var(--dark-gray);
+}

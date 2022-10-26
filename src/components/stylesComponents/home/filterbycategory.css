@@ -1,0 +1,29 @@
+/*========VARIABLES========*/
+:root {
+    --primary-color: #f85555;
+    --light-gray: #dcd9d9;
+    --dark-gray: #4f4f4f;
+    --gray: #ababab;
+}
+
+.select-options {
+    width: 250px;
+    height: 40px;
+    border: 1px solid var(--gray);
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+select {
+    color: var(--dark-gray);
+    border: none;
+    pointer-events: all;
+    font-size: 18px;
+
+}
+
+option {
+    font-family: Yantramanav, sans-serif;
+    color: var(--dark-gray);
+
+}

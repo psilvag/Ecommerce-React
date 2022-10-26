@@ -1,0 +1,129 @@
+/*========VARIABLES========*/
+:root {
+    --primary-color: #f85555;
+    --light-gray: #dcd9d9;
+    --dark-gray: #4f4f4f;
+    --gray: #ababab;
+    --color-background-login-container: hsla(0, 1%, 72%, .1);
+    --color-background-login: #ffffff;
+
+}
+
+/*========IMAGE AND DESCRIPTION========*/
+.container-product-info {
+    display: flex;
+    justify-content: space-around;
+    font-family: Yantramanav, sans-serif;
+}
+
+/*========IMAGE SLIDER========*/
+.container-slider {
+    width: 700px;
+    height: 500px;
+    border: 1px solid red;
+}
+
+/*========DESCRIPTION========*/
+.container-info {
+    width: 500px;
+    height: 400px;
+    padding: 20px;
+    position: relative;
+
+}
+
+.container-description {
+    width: 500px;
+    height: 250px;
+    font-size: 16px;
+    color: #515151;
+    font-family: Yantramanav, sans-serif;
+    line-height: 21px;
+}
+
+/*========DESCRIPTION FOOTER========*/
+.footer-article {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+}
+
+.footer-info_price {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.footer-info-product h3 {
+    color: var(--gray);
+    font-size: 15px;
+}
+
+.footer-info-product span {
+    color: black;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.footer-price-product {
+    width: 140px;
+    height: 70px;
+    position: absolute;
+    left: 280px;
+}
+
+.footer-price-product h3 {
+    color: var(--gray);
+    font-size: 15px;
+    text-align: left;
+}
+
+/*========INPUTS QUANTITY========*/
+.input-quantity {
+    display: flex;
+    color: var(--dark-gray);
+    font-size: 21px;
+    font-weight: 500;
+    text-align: center;
+
+}
+
+.input-quantity-valor {
+    width: 45px;
+    height: 28px;
+    border: 1px solid var(--gray);
+    cursor: pointer;
+
+}
+
+.input-minus,
+.input-plus {
+    width: 28px;
+    height: 28px;
+    border: 1px solid var(--gray);
+    cursor: pointer;
+}
+
+.input-minus:hover {
+    box-shadow: 0 1px var(--dark-gray);
+}
+
+.input-plus:hover {
+    box-shadow: 0 1px var(--dark-gray);
+}
+
+/*========BUTTON-FOOTER========*/
+.button-add-card {
+    width: inherit;
+    height: 50px;
+    background-color: var(--primary-color);
+    color: white;
+    border-style: none;
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.button-add-card:hover {
+    cursor: pointer;
+    filter: brightness(1.3);
+}

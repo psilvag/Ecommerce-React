@@ -1,0 +1,84 @@
+/*========VARIABLES========*/
+:root {
+  --primary-color: #f85555;
+  --light-gray: #dcd9d9;
+  --dark-gray: #4f4f4f;
+  --gray: #ababab;
+  --color-background-login-container: hsla(0, 1%, 72%, .1);
+  --color-background-login: #ffffff;
+
+}
+
+/*========CONTAINER PRODUCT========*/
+
+/*========ARTICLE========*/
+.card-product {
+  display: flex;
+  flex-direction: column;
+  width: 430px;
+  height: 420px;
+  border: 2px solid var(--light-gray);
+  border-radius: 6px;
+  align-items: center;
+  justify-content: center;
+  font-family: Yantramanav, sans-serif;
+  cursor: pointer;
+}
+
+.card-product-body {
+  display: flex;
+  flex-direction: column;
+  width: inherit;
+
+}
+
+/*========IMAGE========*/
+
+/*========ARTICLE-HEADER========*/
+
+.image-product {
+  width: 300px;
+  height: 180px;
+  object-fit: contain;
+}
+
+.image-product:hover {
+  filter: brightness(1.1);
+}
+
+.card-product h3 {
+  color: var(--dark-gray);
+  font-size: 17px;
+  text-align: center;
+}
+
+/*========CARD INFO========*/
+.card-product-info-price span {
+  color: var(--gray);
+}
+
+.card-product-info-price p {
+  color: var(--dark-gray);
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.card-product-info {
+  display: flex;
+  justify-content: space-around;
+  gap: 70px;
+}
+
+/*========ICON AWESOME========*/
+#icon-card {
+  position: relative;
+  bottom: -50px;
+  font-size: 32px;
+
+}
+
+#icon-card:hover {
+  transform: scale(1.1);
+  filter: brightness(1.2);
+  cursor: pointer;
+}

@@ -1,0 +1,47 @@
+/*========VARIABLES========*/
+:root {
+    --primary-color: #f85555;
+    --light-gray: #dcd9d9;
+    --dark-gray: #4f4f4f;
+    --gray: #ababab;
+    --color-background-login-container: hsla(0, 1%, 72%, .1);
+    --color-background-login: #ffffff;
+}
+
+.cart-container {
+    display: flex;
+    flex-direction: column;
+    width: 320px;
+    border: 2px solid var(--gray);
+    margin: 10px 81%;
+    border-radius: 7px;
+    gap: 10px;
+    padding: 10px 15px;
+    font-family: Yantramanav, sans-serif;
+}
+
+.cart-container h2 {
+    color: var(--primary-color);
+}
+
+.cart-container>h3 {
+    text-align: right;
+    color: var(--gray);
+}
+
+.cart-container>h3>span {
+    color: black;
+}
+
+.button-buy {
+    height: 40px;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 18px;
+    border-style: none;
+}
+
+.button-buy:hover {
+    cursor: pointer;
+    filter: brightness(1.3);
+}

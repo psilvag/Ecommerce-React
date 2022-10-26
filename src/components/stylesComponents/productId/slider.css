@@ -1,0 +1,95 @@
+/*========VARIABLES========*/
+:root {
+    --primary-color: #f85555;
+    --light-gray: #dcd9d9;
+    --dark-gray: #4f4f4f;
+    --gray: #ababab;
+}
+
+.slider-general-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/*========SLIDER========*/
+.slider {
+    padding: 20px 50px;
+    position: relative;
+    width: max-content;
+}
+
+.slider-static {
+    width: 100%;
+    max-width: 500px;
+    aspect-ratio: 1.5;
+    overflow: hidden;
+}
+
+.slider-move {
+    display: flex;
+    width: 300%;
+    height: 100%;
+    transition: transform 500ms ease;
+}
+
+.slider-img-container {
+    width: calc(100%/3);
+    padding: 10px;
+}
+
+.slider-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+/*========BUTTONS========*/
+.slider-back,
+.slider-next {
+    width: 50px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: #f85555;
+    color: white;
+    border-style: none;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.slider-back {
+    left: 1px;
+}
+
+.slider-next {
+    right: 1px;
+}
+
+.slider-back:hover {
+    filter: brightness(1.2);
+}
+
+.slider-next:hover {
+    filter: brightness(1.2);
+}
+
+/*======== SMALL-IMAGES========*/
+.container-footer-slider-imgs {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.imgs-small-container {
+    display: flex;
+    width: 100px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    object-fit: contain;
+    cursor: pointer;
+}
