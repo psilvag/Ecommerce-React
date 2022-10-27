@@ -1,14 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useForm } from 'react-hook-form'
 import '../../components/stylesComponents/home/filterbyprice.css'
 
 const FilterByPrice = ({ products, setFilterByPrice }) => {
 
+    const [counterUnitPrice, setCounterUnitPrice] = useState(0)
     const { handleSubmit, register } = useForm()
 
     //==========FILTER THE PRODUCTS BY PRICE===========
     const submit = data => {
         if (data.inputFrom !== '' && data.inputTo !== '') {
+
             if (Number(data.inputTo) > Number(data.inputFrom)) {
                 const productsByprice = prods => Number(prods.price) >= Number(data.inputFrom) && Number(prods.price) <= Number(data.inputTo)
                 const resultFilterPrice = products.filter(productsByprice)

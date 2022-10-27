@@ -13,7 +13,7 @@ import '../styles/home/home.css'
 const Home = () => {
 
   const [inputText, setInputText] = useState('')
-  const [filterByText, setFilterByText] = useState()
+  const [filterByText, setFilter] = useState()
   const [filterByPrice, setFilterByPrice] = useState()
   const [filterByCategory, setFilterByCategory] = useState()
   const products = useSelector(state => state.productsSlice)
@@ -30,24 +30,24 @@ const Home = () => {
   useEffect(() => {
     if (filterByText !== '' && products) {
       const cb = product => product.title.toLowerCase().includes(inputText.toLowerCase().trim())
-      setFilterByText(products.filter(cb))
+      setFilter(products.filter(cb))
     }
     else {
-      setFilterByText(products)
+      setFilter(products)
     }
   }, [inputText, products])
 
   //==========FILTER BY PRICE//////////////////
   useEffect(() => {
     if (filterByPrice) {
-      setFilterByText(filterByPrice)
+      setFilter(filterByPrice)
     }
   }, [filterByPrice])
 
   //==========FILTER BY CATEGORY//////////////////
   useEffect(() => {
     if (filterByCategory) {
-      setFilterByText(filterByCategory)
+      setFilter(filterByCategory)
     }
   }, [filterByCategory])
 
@@ -55,9 +55,7 @@ const Home = () => {
   const handleChange = e => {
     setInputText(e.target.value)
   }
-
-
-
+  console.log(products);
   return (
     <main className='main-home'>
       <div className='home-container-filters'>
